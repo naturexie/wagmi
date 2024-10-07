@@ -5,6 +5,7 @@ import { setupWalletSelector } from '@near-wallet-selector/core'
 import type { WalletSelector, Network } from "@near-wallet-selector/core";
 import { setupEthereumWallets } from '@near-wallet-selector/ethereum-wallets'
 import { setupMyNearWallet } from '@near-wallet-selector/my-near-wallet'
+import { setupNeth } from '@near-wallet-selector/neth'
 import { setupModal } from '@near-wallet-selector/modal-ui'
 import type { Config } from "@wagmi/core";
 import { reconnect, http, createConfig } from "@wagmi/core";
@@ -78,6 +79,7 @@ export default function NearWalletInit() {
           web3Modal,
           alwaysOnboardDuringSignIn: true,
         } as any),
+        setupNeth(),
       ],
     });
     const modal = setupModal(selector, {

@@ -19,6 +19,7 @@
     "@near-wallet-selector/ethereum-wallets": "^8.9.13",
     "@near-wallet-selector/modal-ui": "8.9.10",
     "@near-wallet-selector/my-near-wallet": "8.9.10",
+    "@near-wallet-selector/neth": "8.9.10",
     "near-api-js": "3.0.2",
     "rxjs": "^7.8.1",
     "zustand": "^4.4.1",
